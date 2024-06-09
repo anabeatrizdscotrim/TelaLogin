@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Link Icons Library-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
-    <!-- Link CSS Style-->
-    <link rel="stylesheet" href="style.css" />
-
-    <title>Davscode - Formulário de Login</title>
-  </head>
-  <body>
-    <main class="login">
-      <form class="container">
-        <h1 class="headline">Bem-vindo(a)</h1>
-        <h2 class="subheadline">Insira seus dados de acesso</h2>
-        
-        <div class="form">
-          <label class="label-email" for="email">E-mail</label>
-          <i class="bx bxs-user"></i>
-          <input class="input-email" type="email" id="email" placeholder="Seu email:" autocomplete="off">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-          <label class="label-password" for="password">Senha</label>
+  <!-- Link Icons Library-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <!-- Link CSS Style-->
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Davscode - Formulário de Login</title>
+</head>
+<body>
+  <main class="login">
+    <form class="container" id="loginForm">
+      <h1 class="headline">Bem-vindo(a)</h1>
+      <h2 class="subheadline">Insira seus dados de acesso</h2>
+      
+      <div class="form">
+        <label class="label-email" for="email">E-mail</label>
+        <div class="input-container">
+          <i class="bx bxs-user"></i>
+          <input class="input-email" type="email" id="email" placeholder="Seu email:" autocomplete="off" aria-label="E-mail">
+        </div>
+        
+        <label class="label-password" for="password">Senha</label>
+        <div class="input-container">
           <i class="bx bxs-key"></i>
-          <input class="input-password" type="password" id="password" placeholder="Sua senha:">
+          <input class="input-password" type="password" id="password" placeholder="Sua senha:" aria-label="Senha">
+        </div>
 
-          <a class="forgot"> Esqueceu a senha?</a>
+        <a class="forgot" href="#"> Esqueceu a senha?</a>
 
-          <input class="button" type="submit" value="Login">
-       </div>
-      </form>
-    </main>
-  </body>
+        <input class="button" type="submit" value="Login">
+      </div>
+    </form>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
 </html>

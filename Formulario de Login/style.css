@@ -4,7 +4,7 @@ padding: 0;
 outline: 0;
 border: 0;
 box-sizing: border-box;
-font-family: "Open sans", sans-serif;
+font-family: "Open Sans", sans-serif;
 font-size: 14px;
 font-weight: 400;
 }
@@ -49,14 +49,13 @@ align-items: flex-start;
 margin-top: 16px;
 }
 
-.input-email {
-margin-bottom: 8px;
+.input-container {
+position: relative;
 width: 100%;
-padding: 8px 0 8px 32px;
-border: 1px solid #dddddd;
-border-radius: 4px;
+margin-bottom: 16px;
 }
 
+.input-email,
 .input-password {
 width: 100%;
 padding: 8px 0 8px 32px;
@@ -64,45 +63,36 @@ border: 1px solid #dddddd;
 border-radius: 4px;
 }
 
-.label-email {
-margin: 0 0 -12px 0;
-color: #333333;
-font-weight: 600;
-}
-
+.label-email,
 .label-password {
-margin: 0 0 -12px 0;
+margin: 0 0 4px 0;
 color: #333333;
 font-weight: 600;
 }
 
 .form i {
+position: absolute;
+left: 8px;
+top: 50%;
+transform: translateY(-50%);
 color: #999999;
 font-size: 16px;
-transform: translateX(10px) translateY(28px); 
 }
 
-.input-email::placeholder {
-font-size: 12px;
-color: #999999;
-}
-
+.input-email::placeholder,
 .input-password::placeholder {
 font-size: 12px;
 color: #999999;
 }
 
-.input-email:focus {
-border: 1px solid #2676EF;
-}
-
+.input-email:focus,
 .input-password:focus {
 border: 1px solid #2676EF;
 }
 
 .forgot {
 color: #2676EF;
-margin: 16px 0 16px 0;
+margin: 16px 0;
 cursor: pointer;
 }
 
